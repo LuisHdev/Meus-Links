@@ -25,7 +25,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Figma
 - Git e Github
 
-Acesse o figma do projeto em https://www.figma.com/file/FrxeJtxwxxUOHylvKTgkQf/Wireframe-linktree?type=design&node-id=0%3A1&mode=design&t=Sfjtlf39xvsbTXaw-1
+- [Acesse o figma do projeto](https://www.figma.com/file/FrxeJtxwxxUOHylvKTgkQf/Wireframe-linktree?type=design&node-id=0%3A1&mode=design&t=Sfjtlf39xvsbTXaw-1)
 
 ## 💻 Projeto
 
