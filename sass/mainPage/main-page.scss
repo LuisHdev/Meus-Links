@@ -1,0 +1,105 @@
+@mixin text-style($font-family, $font-weight, $font-size){
+  font-family: $font-family;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+@mixin link-style($height, $width, $padding, $border-radius){
+  height: $height;
+  width: $width;
+  padding: $padding;
+  border-radius: $border-radius;
+}
+
+@mixin display-style($display, $justify-content, $align-items){
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../midia/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header{
+  img{
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid #09F0FF;
+  }
+  h1{
+    color: $main-texts-color;
+    @include text-style(Monomaniac One, 200, 28px);
+  }
+  p{
+    color: $secondary-texts-color;
+    @include text-style(Monomaniac One, 200, 18px);
+  }
+}
+
+.links{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+
+  a{
+    @include text-style(Montserrat, 600, 18px);
+    @include link-style(40px, 210px, 13px, 10px);
+    @include display-style(flex, center, center);
+    margin: 10px 10px;
+    color: $main-texts-color;
+    background-color: $background-links-color;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+    &:hover{
+      transform:scale(1.1);
+      background-color: $background-hovered-color;
+    }
+  }
+
+  i{
+    font-size: 20px;
+    padding-left: 20px
+  }
+}
+
+footer{
+  h3{
+    @include text-style(Monomaniac One, 200, 18px);
+    color: $secondary-texts-color;
+  }
+  p{
+    @include text-style(Monomaniac One, 200, 14px);
+    color: $secondary-texts-color;
+  }
+}
+
+
+
+

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../midia/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  border-radius: 50%;
+  border: 3px solid #09F0FF;
+}
+header h1 {
+  color: #ffffff;
+  font-family: Monomaniac One;
+  font-weight: 200;
+  font-size: 28px;
+}
+header p {
+  color: #4187b9;
+  font-family: Monomaniac One;
+  font-weight: 200;
+  font-size: 18px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+.links a {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  height: 40px;
+  width: 210px;
+  padding: 13px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 10px;
+  color: #ffffff;
+  background-color: #3F515F;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.links a:hover {
+  transform: scale(1.1);
+  background-color: #1f7980;
+}
+.links i {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+footer h3 {
+  font-family: Monomaniac One;
+  font-weight: 200;
+  font-size: 18px;
+  color: #4187b9;
+}
+footer p {
+  font-family: Monomaniac One;
+  font-weight: 200;
+  font-size: 14px;
+  color: #4187b9;
+}
+
+/*# sourceMappingURL=style.css.map */
